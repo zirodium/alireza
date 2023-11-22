@@ -1,0 +1,15 @@
+<body>
+    <div class="container">
+      <div class="cards">
+        @for (contact of contacts; track contact.id; let idx = $index){
+          <div class="card card-one">
+            <h2 class="card-title">{{idx+1}}# {{ contact.name }}</h2>
+            <p class="date">{{ contact.date }}</p>
+            <a [href]="contact.link">orem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias ut veniam?</a>
+          </div>
+        }
+      </div>
+    </div>
+  </body>
+  <router-outlet></router-outlet>
+  
